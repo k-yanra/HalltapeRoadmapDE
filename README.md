@@ -1,5 +1,5 @@
 # HalltapeRoadmapDE
-<i>Курс, Roadmap, агрегатор информации для Data Engineer | Актуально на 2025г. | Версия 2.1</i> 
+<i>Курс, Roadmap, агрегатор информации для Data Engineer | Актуально на 2025г. | Версия 2.3</i> 
 
 Оглавление
 - [HalltapeRoadmapDE](#halltaperoadmapde)
@@ -129,6 +129,11 @@
 Регистрируешься на Github и подключаешь его к своему ПК
 
 ➜ [Работа с github / git](Git/README.md)
+
+➜ [Теоритические аспекты на картинках при работе с github / git](Git/THEORY/README.md)
+
+➜ [Видео по работе с github / git на примере Bootcamp'а](https://youtu.be/dflUnlOTUic)
+
 
 ***
 ## 4. Linux / Terminal
