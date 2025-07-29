@@ -373,7 +373,7 @@ spark.dynamicAllocation.executorIdleTimeout=60s  # удаляет исполни
 ## Основные алгоритмы джойнов
 
 <p align="center">
-    <img src="../png/spark_join.jpg" alt="spark" width="600"/>
+    <img src="../../png/spark_join.jpg" alt="spark" width="600"/>
 </p>
 
 ```Next level для тех, кто освоил типы джойнов, и теперь готов к оптимизации своих запросов 😎```

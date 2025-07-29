@@ -217,13 +217,16 @@ ORDER BY average_salary DESC;
 
 
 ```python
-result_df = employees_df\
-                .join(departments_df, "department_id")\
-                .join(salaries_df, "employee_id")
-                .filter(salaries_df.salary >= 3000)
-                .groupBy("department_name")
-                .agg(F.avg("salary").alias("average_salary"))
-                .orderBy(F.desc("average_salary"))
+result_df = (
+    employees_df
+    .join(departments_df, "department_id")
+    .join(salaries_df, "employee_id")
+    .filter(salaries_df.salary >= 3000)
+    .groupBy("department_name")
+    .agg(F.avg("salary").alias("average_salary"))
+    .orderBy(F.desc("average_salary"))
+)
+
 result_df.show()
 ```
 
