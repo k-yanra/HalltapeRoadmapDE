@@ -34,7 +34,7 @@
 
 ## Архитектура HDFS:
 <p align="center">
-    <img src="./../png/hadoop_arch.png" alt="hadoop"/>
+    <img src="../pngadoop_arch.png" alt="hadoop"/>
 </p>
 
 ### Основные компоненты системы
@@ -72,7 +72,7 @@ HDFS поддерживает базовый набор операций для 
 ---
 
 <p align="center">
-    <img src="./../png/hadoop_rep.png" alt="hadoop"/>
+    <img src="../pngadoop_rep.png" alt="hadoop"/>
 </p>
 
 ## Репликация в HDFS
@@ -83,7 +83,7 @@ HDFS поддерживает базовый набор операций для 
 ---
 
 <p align="center">
-    <img src="./../png/hadoop_secondary.png" alt="hadoop"/>
+    <img src="../pngadoop_secondary.png" alt="hadoop"/>
 </p>
 
 ## Secondary NameNode
