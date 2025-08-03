@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://halltape.github.io/RoadmapPage/" target="_blank">
-    <img src="main.png" alt="de" width="600"/>
+    <img src="docs/_frontend/main.png" alt="de" width="600"/>
   </a>
 </p>
 
