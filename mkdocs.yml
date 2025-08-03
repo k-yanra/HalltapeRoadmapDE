@@ -17,7 +17,7 @@ theme:
     code: Fira Mono
   code:
     highlight_theme: dracula
-  logo: _frontend/images/logo.svg
+  logo: _frontend/images/logo_v2.svg
 
 # Только свой CSS
 extra_css:
