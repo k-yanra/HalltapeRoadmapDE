@@ -1,7 +1,7 @@
 # 🚀 Roadmap для Data Engineer
 
 <p align="center">
-  <a href="https://halltape.github.io/RoadmapPage/" target="_blank">
+  <a href="https://halltape.github.io/HalltapeRoadmapDE/" target="_blank">
     <img src="docs/_frontend/main.png" alt="de" width="600"/>
   </a>
 </p>
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://halltape.github.io/RoadmapPage/" target="_blank">
+  <a href="https://halltape.github.io/HalltapeRoadmapDE/" target="_blank">
     <strong> ОТКРЫТЬ ROADMAP</strong>
   </a>
 </p>
