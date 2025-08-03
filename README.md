@@ -19,4 +19,4 @@
 ---
 
 Хочешь внести свой вклад и стать соавтором? Ознакомься с гайдом по контрибуции:  
-✍️ [Стать автором](https://github.com/halltape/HalltapeRoadmapDE/blob/main/CONTRIBUTING.md)
+✍️ [Стать автором](https://halltape.github.io/HalltapeRoadmapDE/CONTRIBUTING/)
