@@ -23,7 +23,7 @@
 
 
 <p align="center">
-    <img src="../../pngarn_eco.png" alt="map_reduce"/>
+    <img src="./../../png/yarn_eco.png" alt="map_reduce"/>
 </p>
 
 ### HDFS (Hadoop Distributed File System)
@@ -55,7 +55,7 @@
 ### Как работает MapReduce?
 
 <p align="center">
-    <img src="../../pngarn_map_reduce.jpg" alt="map_reduce"/>
+    <img src="./../../png/yarn_map_reduce.jpg" alt="map_reduce"/>
 </p>
 
 MapReduce — это способ обработки больших объёмов данных за счёт разбиения задачи на мелкие подзадачи, которые параллельно обрабатываются на разных машинах в кластере.
@@ -96,7 +96,7 @@ MapReduce — это способ обработки больших объёмо
 Благодаря YARN, Hadoop больше не ограничен только MapReduce-программами — теперь на одном кластере могут параллельно работать Spark, Hive, Tez, Flink и многие другие фреймворки. Это позволило превратить Hadoop из специализированного инструмента в универсальную платформу для обработки больших данных.
 
 <p align="center">
-    <img src="../../pngarn.png" alt="yarn"/>
+    <img src="./../../png/yarn.png" alt="yarn"/>
 </p>
 
 ---

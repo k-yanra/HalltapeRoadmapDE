@@ -1,37 +1,59 @@
-# Roadmap | Как стать Дата Инженером
-<i>Курс, Roadmap, агрегатор информации для Data Engineer | Актуально на 2025г. | Версия 2.1</i>
+# HalltapeRoadmapDE
+<i>Курс, Roadmap, агрегатор информации для Data Engineer | Актуально на 2025г. | Версия 2.3</i> 
+
+Оглавление
+- [HalltapeRoadmapDE](#halltaperoadmapde)
+  - [Каналы авторов Roadmap | Подпишись!](#каналы-авторов-roadmap--подпишись)
+  - [Комьюнити](#комьюнити)
+  - [0. Деньги](#0-деньги)
+  - [1. Кто такой Дата Инженер?](#1-кто-такой-дата-инженер)
+  - [2. Курсы](#2-курсы)
+  - [3. Github / Git](#3-github--git)
+  - [4. Linux / Terminal](#4-linux--terminal)
+  - [4. Data Warehouse](#4-data-warehouse)
+  - [5. Нормальные формы](#5-нормальные-формы)
+  - [6. Модели данных](#6-модели-данных)
+  - [7. Data Vault (Hub - Satellite - Link)](#7-data-vault-hub---satellite---link)
+  - [8. Индексы и партиции](#8-индексы-и-партиции)
+  - [9. Docker](#9-docker)
+  - [10. Hadoop](#10-hadoop)
+  - [11. Airflow](#11-airflow)
+  - [12. Greenplum](#12-greenplum)
+    - [🧩 Уровень: Junior](#-уровень-junior)
+    - [🚀 Уровень: Junior+ и выше](#-уровень-junior-и-выше)
+    - [🧠 Курсы для более глубого погружения](#-курсы-для-более-глубого-погружения)
+  - [13. ClickHouse](#13-clickhouse)
+  - [14. Spark](#14-spark)
+    - [🧩 Уровень: Junior](#-уровень-junior-1)
+    - [🚀 Уровень: Junior+ и выше](#-уровень-junior-и-выше-1)
+  - [15. dbt (data build tool)](#15-dbt-data-build-tool)
+  - [16. Apache Kafka](#16-apache-kafka)
+  - [17. Pet Project](#17-pet-project)
+  - [18. Теоретические вопросы c собеседований](#18-теоретические-вопросы-c-собеседований)
+  - [19. Резюме и Работа](#19-резюме-и-работа)
+  - [20. Рабочие кейсы](#20-рабочие-кейсы)
+  - [21. Полезные ссылки](#21-полезные-ссылки)
 
 ***
 ## Каналы авторов Roadmap | Подпишись!
 
-<div class="tg-pairs">
-  <div class="tg-pair">
-    <a href="https://t.me/halltape_data" target="_blank">Канал Я – Дата Инженер</a>
-    <a href="https://t.me/halltape" target="_blank">@halltape</a>
-  </div>
-  <div class="tg-pair">
-    <a href="https://t.me/Shust_DE" target="_blank">Инженерообязанный Из военки в IT</a>
-    <a href="https://t.me/ShustDE" target="_blank">@ShustDE</a>
-  </div>
-  <div class="tg-pair">
-    <a href="https://t.me/rzv_de" target="_blank">rzv Data Engineering</a>
-    <a href="https://t.me/razvodov_de_mentor" target="_blank">@razvodov_de_mentor</a>
-  </div>
-  <div class="tg-pair">
-    <a href="https://t.me/dataengineerlab" target="_blank">Data Engineer Lab</a>
-    <a href="https://t.me/ampodvalniy" target="_blank">@ampodvalniy</a>
-  </div>
-  <div class="tg-pair">
-    <a href="https://t.me/chtotonainzhenernom" target="_blank">что-то на инженерном</a>
-    <a href="https://t.me/iamannabo" target="_blank">@iamannabo</a>
-  </div>
-  <div class="tg-pair">
-    <a href="https://t.me/data_penguin" target="_blank">it пингвин - data engineer</a>
-    <a href="https://t.me/it_pengwin" target="_blank">@it_pengwin</a>
-  </div>
-</div>
+| Канал | Автор |
+|------------------|--------|
+| [Канал Я – Дата Инженер](https://t.me/halltape_data) | [t.me/halltape](https://t.me/halltape) |
+| [Канал Инженерообязанный Из военки в IT](https://t.me/Shust_DE) | [t.me/ShustDE](https://t.me/ShustDE) |
+| [Канал rzv Data Engineering](https://t.me/rzv_de) | [t.me/razvodov_de_mentor](https://t.me/razvodov_de_mentor) |
+| [Канал Data Engineer Lab](https://t.me/dataengineerlab) | [t.me/ampodvalniy](https://t.me/ampodvalniy) |
+| [Канал что-то на инженерном](https://t.me/chtotonainzhenernom) | [t.me/iamannabo](https://t.me/iamannabo) |
+| [it пингвин - data engineer](https://t.me/data_penguin) | [t.me/it_pengwin](https://t.me/it_pengwin) |
+
 
 **Хочешь стать автором?** [Кликай сюда!](CONTRIBUTING.md)
+
+## Комьюнити
+
+Если ты не уверен, что сможешь все это осилить самостоятельно, то подписывайся на канал, где ты всегда найдешь поддержку и приятное общение с такими же ребятами, у которых есть мечта попасть в IT. Ты получишь общение в крутом комьюнити, большое количество часов записей собеседований, прожарку резюме, еженедельные созвоны по средам и иногое другое!
+
+[Кликай сюда и подписывайся!](https://boosty.to/halltape_data/purchase/3416321?ssource=DIRECT&share=subscription_link)
 
 ***
 
@@ -40,40 +62,14 @@
 С этого момента забудь про справедливость. Её нет.
 
 Зарплатные вилки собраны лично мной на собесах за 2024 год:
-
-<div class="salary-cards">
-
-<div class="salary-card">
-  <div class="salary-title">Стажер</div>
-  <div class="salary-value">70k – 90k</div>
-</div>
-
-<div class="salary-card">
-  <div class="salary-title">Джун</div>
-  <div class="salary-value">100k – 150k</div>
-</div>
-
-<div class="salary-card">
-  <div class="salary-title">Джун+</div>
-  <div class="salary-value">160k – 190k</div>
-</div>
-
-<div class="salary-card">
-  <div class="salary-title">Мидл</div>
-  <div class="salary-value">200k – 250k</div>
-</div>
-
-<div class="salary-card">
-  <div class="salary-title">Мидл+</div>
-  <div class="salary-value">260k – 380k</div>
-</div>
-
-<div class="salary-card">
-  <div class="salary-title">Сеньор и выше</div>
-  <div class="salary-value">от 380k</div>
-</div>
-
-</div>
+| Уровень      | Зарплата на руки      |
+|--------------|--------------------|
+| Стажер       | 70k - 90k          |
+| Джун         | 100k - 150k        |
+| Джун+        | 160k - 190k        |
+| Мидл        | 200k - 250k        |
+| Мидл+       | 260k - 380k        |
+| Сеньор и выше | от 380k        |
 
 Учитывайте, что вилки в некоторых компаниях могут быть сильно ниже. Корреляция между размером зарплаты и знаниями не всегда 100%.
 
@@ -266,7 +262,7 @@
 ## 12. Greenplum
 
 <p align="center">
-    <img src="png/gp_logo.png" width="640" height="320"/>
+    <img src="./png/gp_logo.png" width="640" height="320"/>
 </p>
 
 Greenplum будет в 50% вакансиях на DE. Остальные будут сидеть на Hadoop + Spark. На первых порах рекомендую **базово освоить** все три, но окунуться поглубже лишь в один на выбор (Spark | Greenplum). Если хватит сил на освоение обоих, флаг вам в руки!
@@ -297,7 +293,7 @@ Greenplum будет в 50% вакансиях на DE. Остальные бу�
 ## 13. ClickHouse
 
 <p align="center">
-    <img src="png/ch_logo.jpg"/>
+    <img src="./png/ch_logo.jpg"/>
 </p>
 
 ClickHouse будет в 80% вакансиях для постоения витрин данных. В последнее время стала набирать популярность связка **GreenPlum** + **ClickHouse**. Не стоит в теорию погружаться с головой и читать всю документацию, а стоит прочитать только то, что описано в статье + ссылки на другие источники. 
@@ -460,10 +456,3 @@ Spark изучайте только **после** **того**, как науч
 - [Data Engineer тренирует System Design секцию](https://www.youtube.com/watch?v=6n92YA6UXlQ)
 - [РАЗДАЮ БАЗУ И МОТИВАЦИЮ ПО DATA ENGINEER!](https://www.youtube.com/watch?v=piZP5KCECGI&t=5273s)
 - [Крутить ОПЫТ или НЕТ | СТРИМ на Twitch](https://www.youtube.com/watch?v=Vfeb1LNCjPw)
-
-<a id="scrollToTopBtn" title="Наверх"
-   style="right:32px;bottom:32px;z-index:1000;
-   background:rgba(30,34,40,0.7);color:#fff;padding:12px 18px;border-radius:50px;
-   box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:1.5em;cursor:pointer;transition:background 0.2s;">
-   ↑
-</a>
