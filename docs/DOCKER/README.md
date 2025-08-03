@@ -1,0 +1,129 @@
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103580753', 'ym');
+
+    ym(103580753, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/103580753" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+# Docker
+
+## Что такое Docker?
+
+**Docker** — это платформа, которая позволяет упаковывать приложения и их зависимости в изолированные контейнеры. Это облегчает развертывание и обеспечивает одинаковое поведение приложения в разных средах (локально, на сервере или в облаке).
+
+### Преимущества Docker:
+- **Портативность:** Работает одинаково на всех системах.
+- **Изоляция:** Каждое приложение работает в своём контейнере.
+- **Лёгкость:** Контейнеры занимают меньше ресурсов по сравнению с виртуальными машинами.
+- **Удобство:** Упрощает управление зависимостями и процессами развертывания.
+
+[Различие между Docker и Virtual Machine](VM/README.md)
+
+---
+
+## Что такое Dockerfile?
+
+**Dockerfile** — это текстовый файл с инструкциями для создания Docker-образа. 
+
+Образ — это шаблон для создания контейнеров. Вы описываете в Dockerfile, какие программы и зависимости нужны вашему приложению, чтобы оно работало.
+
+### Пример Dockerfile:
+```Dockerfile
+# Используем базовый образ Python
+FROM python:3.10-slim
+
+# Копируем файлы проекта в контейнер
+COPY . /app
+
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+# Устанавливаем зависимости
+RUN pip install -r requirements.txt
+
+# Запускаем приложение
+CMD ["python", "app.py"]
+```
+
+
+### Что такое docker-compose?
+
+docker-compose — это инструмент для запуска нескольких связанных контейнеров.
+
+Вместо запуска контейнеров вручную, вы описываете их конфигурацию в одном YAML-файле и управляете ими как единой системой. Кстати формат файла пишут, как **.yaml или .yml** (Разницы нет)
+
+Файлик называют **docker-compose.yaml**
+
+```Dockerfile
+# Можно собирать из нескольких сервисов
+version: "3.6" # Версия формата файла Docker Compose, используемая в данном случае, — `3.6`.
+services:
+  jupyterlab:
+    image: andreper/jupyterlab:3.0.0-spark-3.0.0 # Образ: `andreper/jupyterlab:3.0.0-spark-3.0.0`
+    container_name: jupyterlab # Имя контейнера: `jupyterlab`
+    ports:
+      - 8888:8888 # 8888:8888 (интерфейс JupyterLab)
+      - 4040:4040 # 4040:4040 (интерфейс Spark UI)
+    volumes:
+      - ./build/workspace:/opt/workspace # Слева папка у вас на компе, а справа папка внутри контейнера. Все, что положишь в папку workspace, будет автоматически и внутри контейнера!
+  spark-master:
+    image: andreper/spark-master:3.0.0
+    container_name: spark-master
+    ports:
+      - 8080:8080
+      - 7077:7077
+    volumes:
+      - ./build/workspace:/opt/workspace
+  spark-worker-1:
+    image: andreper/spark-worker:3.0.0
+    container_name: spark-worker-1
+    environment:
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_MEMORY=2g
+    ports:
+      - 8081:8081
+    volumes:
+      - ./build/workspace:/opt/workspace
+    depends_on:
+      - spark-master # Зависит от сервиса spark-master, чтобы гарантировать его запуск после мастера.
+
+```
+
+**Для запуска:**
+Этой командой можно запустить сборку и запуск docker-контейнера в фоновом режиме (в терминале не будут отображаться логи)
+```Dockerfile
+docker-compose up -d
+```
+
+Пример docker-compose взят [отсюда](https://github.com/halltape/HalltapeSparkCluster)
+
+
+## Распространённые команды Docker
+
+### Управление образами
+- **`docker build -t <имя_образа> .`**  
+  Собирает образ из Dockerfile в текущей директории.
+- **`docker images`**  
+  Показывает список всех образов на вашем компьютере.
+- **`docker rmi <image_id>`**  
+  Удаляет образ по его идентификатору.
+
+### Управление контейнерами
+- **`docker ps`**  
+  Показывает запущенные контейнеры.
+- **`docker ps -a`**  
+  Показывает все контейнеры, включая остановленные.
+- **`docker stop <container_id>`**  
+  Останавливает запущенный контейнер.
+- **`docker rm <container_id>`**  
+  Удаляет остановленный контейнер.
+
+### Просмотр логов
+- **`docker logs <container_id>`**  
+  Показывает логи контейнера.
